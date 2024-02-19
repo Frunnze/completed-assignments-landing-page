@@ -1,1 +1,23 @@
 /* add your CSS here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

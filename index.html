@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
+
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- ADD YOUR CODE HERE -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="navbar">
+      <a class="navbar-section" href="#home">Home</a>
+      <a class="navbar-section" href="#products">Products</a>
+      <a class="navbar-section" href="#feedback">Feedback</a>
+      <a class="navbar-section" href="#contacts">Contacts</a>
+    </div>
 
-    <div>
-      <h1>Completed UTM FAF assignments!</h1>
+    <div id="first-section">
+      <div>
+        <h1 id="main-header">Completed<br/>UTM FAF<br/>assignments!</h1>
+        <button id="buy-button" onclick="location.href='#contacts'">  
+          Buy
+        </button>
+      </div>
+      <img id="section1-img" src="images/faf-docs.png"/>
     </div>
   </body>
 </html>

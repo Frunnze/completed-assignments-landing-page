@@ -57,13 +57,15 @@ html {
     width: 400px;
 }
 
+
+/* Products section */
 #products-section {
     padding: 25px 200px;
     border-bottom: 1px solid #DDDDDD;
     background-color: #F7F7F7;
 }
 
-#products-header {
+.section-header {
     font-size: 30px;
     font-weight: bold;
 }
@@ -92,4 +94,27 @@ html {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+
+/* Feedback (third) section */
+#feedback-section {
+    padding: 25px 200px;
+    border-bottom: 1px solid #DDDDDD;
+    background-color: white;
+}
+
+#feedbacks-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.author-feedback-img {
+    width: 60px;
+}
+
+.feedback-text {
+    text-align: center;
 }

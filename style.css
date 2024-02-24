@@ -1,10 +1,14 @@
 html {
     font-family: "Source Sans 3", sans-serif;
     font-weight: 300;
-    min-width: 1000px;
+    min-width: 1150px;
 }
 
 #navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
     display: flex;
     gap: 45px;
     height: 40px;
@@ -72,10 +76,7 @@ html {
 
 .products-imgs {
     width: 250px;
-}
-
-.products-imgs:hover {
-    filter: grayscale(100%) opacity(0.7);
+    transition: filter 0.2s ease;
 }
 
 .img-label-container {
@@ -83,6 +84,33 @@ html {
     gap: 10px;
     flex-direction: column;
     align-items: center;
+}
+
+.img-download-container {
+    position: relative;
+}
+
+.download-label {
+    position: absolute;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 99;
+    font-weight: 400;
+}
+
+.img-download-container:hover .download-label {
+    opacity: 1;
+}
+
+.img-download-container:hover .products-imgs {
+    filter: blur(2px) opacity(0.7);
 }
 
 .img-label-prop {
@@ -94,6 +122,7 @@ html {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    width: 100%;
 }
 
 
@@ -117,4 +146,78 @@ html {
 
 .feedback-text {
     text-align: center;
+}
+
+
+/* Contacts (fourth) section */
+#contacts-section {
+    padding: 25px 200px;
+    border-bottom: 1px solid #DDDDDD;
+    background-color: #F7F7F7;
+}
+
+#contacts-text {
+    text-align: center;
+    font-size: medium;
+}
+
+.author-img-contacts-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#author-submit-form-container {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+#form {
+    width: 60%;
+}
+
+.form-labels {
+    font-size: small;
+}
+
+#email {
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 50%;
+    padding-left: 10px;
+}
+
+#message {
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    width: 90%;
+    height: 150px;
+    resize: none;
+}
+
+#submit-button {
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 35px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Last section */
+#last-section {
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #bcbbbb;
 }

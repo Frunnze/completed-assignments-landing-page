@@ -12,22 +12,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <div id="navbar">
-      <a class="navbar-section" href="#home">Home</a>
-      <a class="navbar-section" href="#products">Products</a>
-      <a class="navbar-section" href="#feedback">Feedback</a>
-      <a class="navbar-section" href="#contacts">Contacts</a>
+      <a class="navbar-section" href="#home-section">Home</a>
+      <a class="navbar-section" href="#products-section">Products</a>
+      <a class="navbar-section" href="#feedback-section">Feedback</a>
+      <a class="navbar-section" href="#contacts-section">Contacts</a>
     </div>
 
-    <div id="first-section">
+    <div id="home-section">
       <div>
         <h1 id="main-header">Completed<br/>UTM FAF<br/>assignments!</h1>
-        <button id="buy-button" onclick="location.href='#contacts'">  
-          Buy
-        </button>
+        <a href="#contacts-section">
+          <button id="buy-button">Buy</button>
+        </a>
       </div>
       <img id="section1-img" src="images/faf-docs.png"/>
+    </div>
+
+    <div id="products-section">
+      <h2 id="products-header">Products</h1>
+      <div id="products-imgs-container">
+        <div class="img-label-container">
+          <a href="example_products/test-example.pdf">
+            <img class="products-imgs" src="images/tests-vector.png">
+          </a>
+          <span class="img-label-prop">Tests</span>
+          <p>Marks: generally, 8+</p>
+        </div>
+
+        <div class="img-label-container">
+          <a href="example_products/homework-example.pdf">
+            <img class="products-imgs" src="images/homework-vector.png">
+          </a>
+          <span class="img-label-prop">Homeworks</span>
+          <p>Marks: generally, 9+</p>
+        </div>
+
+        <div class="img-label-container">
+          <a href="example_products/homework-example.pdf">
+            <img class="products-imgs" src="images/labs-vector.png">
+          </a>
+          <span class="img-label-prop">Laboratories + Reports </span>
+          <p>Marks: generally, 9+</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

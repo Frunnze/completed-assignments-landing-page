@@ -34,12 +34,13 @@
 
     <!-- Products (second) section -->
     <div id="products-section">
-      <h2 class="section-header">Products</h1>
+      <h2 class="section-header">Products</h2>
 
       <!-- Tests product -->  
       <div id="products-imgs-container">
         <div class="img-label-container">
-          <a href="example_products/test-example.pdf">
+          <a class="img-download-container" href="example_products/test-example.pdf">
+            <span class="download-label">Download example</span>
             <img class="products-imgs" src="images/tests-vector.png">
           </a>
           <span class="img-label-prop">Tests</span>
@@ -48,16 +49,18 @@
 
         <!-- Homeworks product -->
         <div class="img-label-container">
-          <a href="example_products/homework-example.pdf">
-            <img class="products-imgs" src="images/homework-vector.png">
-          </a>
+            <a class="img-download-container" href="example_products/homework-example.pdf">
+              <span class="download-label">Download example</span>
+              <img class="products-imgs" src="images/homework-vector.png">
+            </a>
           <span class="img-label-prop">Homeworks</span>
           <p>Marks: generally, 9+</p>
         </div>
 
         <!-- Labs product -->
         <div class="img-label-container">
-          <a href="example_products/homework-example.pdf">
+          <a class="img-download-container" href="example_products/lab-example.pdf">
+            <span class="download-label">Download example</span>
             <img class="products-imgs" src="images/labs-vector.png">
           </a>
           <span class="img-label-prop">Laboratories + Reports </span>
@@ -68,9 +71,8 @@
 
     <!-- Feedback (third) section -->
     <div id="feedback-section">
-      <h2 class="section-header">Feedback</h1>
+      <h2 class="section-header">Feedback</h2>
 
-      <!-- First feedback -->
       <div id="feedbacks-container">
         <div class="img-label-container">
           <img class="author-feedback-img" src="images/feedback1-author.png" />
@@ -91,6 +93,33 @@
             hobbit's pantry.</p>
         </div>  
       </div>
+    </div>
+
+    <!-- Contacts (fourth) section -->
+    <div id="contacts-section">
+      <h2 class="section-header">Contacts</h2>
+      <div id="author-submit-form-container">
+        <div class="author-img-contacts-container">
+          <img class="author-feedback-img" src="images/author-img.png" />
+          <span>Frunze Vladislav</span>
+          <span id="contacts-text">vladislav.frunze@isa.utm.md<br/>078912345</span>
+        </div>
+
+        <div id="form">
+          <form action="">
+            <label class="form-labels" for="email">Your email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label class="form-labels" for="message">Message:</label><br>
+            <textarea type="text" id="message" name="message"></textarea><br>
+            <input id="submit-button" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home (first) section -->
+    <div id="last-section">
+      <p>©2024 AFAF</p>
     </div>
 
   </body>

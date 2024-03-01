@@ -1,20 +1,20 @@
 html {
     font-family: "Source Sans 3", sans-serif;
     font-weight: 300;
-    min-width: 1150px;
 }
 
 #navbar {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 45px;
+    gap: 7%;
     height: 40px;
     border-bottom: 1px solid #DDDDDD;
     align-items: center;
-    padding-left: 200px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .navbar-section {
@@ -31,13 +31,14 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 200px;
+    padding: 40px 15%;
     border-bottom: 1px solid #DDDDDD;
+    background-color: rgb(255, 255, 255);
 }
 
 #main-header {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 6vw;
 }
 
 #buy-button {
@@ -58,7 +59,7 @@ html {
 
 #section1-img {
     display: block;
-    width: 400px;
+    width: 30vw;
 }
 
 
@@ -220,4 +221,24 @@ html {
     padding: 10px 0px;
     text-align: center;
     background-color: #bcbbbb;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 500px) {    
+    .navbar-section {
+        font-size: 4.5vw;
+    }
+
+    #home-section {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #section1-img {
+        width: 100%;
+    }
+
+    #main-header {
+        font-size: 11vw;
+    }
 }

@@ -38,7 +38,7 @@ html {
 
 #main-header {
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 4vw;
 }
 
 #buy-button {
@@ -51,6 +51,7 @@ html {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 #buy-button:hover {
@@ -65,18 +66,18 @@ html {
 
 /* Products section */
 #products-section {
-    padding: 25px 200px;
+    padding: 25px 15%;
     border-bottom: 1px solid #DDDDDD;
     background-color: #F7F7F7;
 }
 
 .section-header {
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
 }
 
 .products-imgs {
-    width: 250px;
+    width: 15vw;
     transition: filter 0.2s ease;
 }
 
@@ -85,6 +86,7 @@ html {
     gap: 10px;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5vw;
 }
 
 .img-download-container {
@@ -98,7 +100,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
+    font-size: 2vw;
     text-align: center;
     opacity: 0;
     transition: opacity 0.2s ease;
@@ -116,20 +118,21 @@ html {
 
 .img-label-prop {
     font-weight: bold;
-    font-size: 20px;
 }
 
 #products-imgs-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 
 /* Feedback (third) section */
 #feedback-section {
-    padding: 25px 200px;
+    padding: 25px 15%;
     border-bottom: 1px solid #DDDDDD;
     background-color: white;
 }
@@ -137,7 +140,7 @@ html {
 #feedbacks-container {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -152,7 +155,7 @@ html {
 
 /* Contacts (fourth) section */
 #contacts-section {
-    padding: 25px 200px;
+    padding: 25px 15%;
     border-bottom: 1px solid #DDDDDD;
     background-color: #F7F7F7;
 }
@@ -167,7 +170,6 @@ html {
     gap: 10px;
     flex-direction: column;
     align-items: center;
-    margin-left: 100px;
 }
 
 #author-submit-form-container {
@@ -177,6 +179,8 @@ html {
     align-items: center;
     gap: 50px;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #form {
@@ -193,14 +197,15 @@ html {
     margin-bottom: 10px;
     height: 30px;
     width: 50%;
-    padding-left: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #message {
     border: 1px solid #DEDEDE;
     border-radius: 10px;
     margin-bottom: 10px;
-    padding: 10px 10px;
+    padding: 2% 2%;
     width: 90%;
     height: 150px;
     resize: none;
@@ -225,6 +230,7 @@ html {
 
 /* Mobile styles */
 @media screen and (max-width: 500px) {    
+    /* Home section adaptation */
     .navbar-section {
         font-size: 4.5vw;
     }
@@ -232,13 +238,67 @@ html {
     #home-section {
         flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
     }
 
     #section1-img {
-        width: 100%;
+        width: 70%;
     }
 
     #main-header {
-        font-size: 11vw;
+        font-size: 9vw;
+    }
+
+    /* Products section adaptation */
+    .section-header {
+        font-size: 6vw;
+    }
+
+    .products-imgs {
+        width: 30vw;
+    }
+
+    .img-label-container {
+        font-size: 5vw;
+    }
+
+    #products-imgs-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .download-label {
+        font-size: 2vw;
+    }
+
+    /* Feedback section adaptation */        
+    .author-feedback-img {
+        width: 10vw;
+    }
+
+    .feedback-text {
+        font-size: 3.5vw;
+    }
+
+    /* Contacts section adaptation */    
+    #contacts-text {
+        font-size: 3.5vw;
+    }    
+
+    #form {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+    
+    #message {
+        width: 100%;
+    }
+
+    #submit-button {
+        width: 50%;
+        
     }
 }

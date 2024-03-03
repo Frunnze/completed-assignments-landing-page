@@ -72,7 +72,7 @@ html {
 }
 
 .section-header {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 
@@ -104,7 +104,7 @@ html {
     text-align: center;
     opacity: 0;
     transition: opacity 0.2s ease;
-    z-index: 99;
+    z-index: 98;
     font-weight: 400;
 }
 
@@ -228,6 +228,79 @@ html {
     background-color: #bcbbbb;
 }
 
+#phone-img {
+    width: 20px;
+}
+
+#mobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mascot */
+@keyframes mascot-welcome {
+    0% {top: 15%; left: 2%;}
+    50% {top: 30%; left: 50%;}
+    100% {top: 15%; left: 100%;}
+}
+
+@keyframes rotating {
+    0% {top: 30%; left: 100%;}
+    50% {top: 50%; left: 50%; transform: rotate(360deg);}
+    100% {top: 50%; left: -5%; transform: rotate(0deg);}
+}
+
+@keyframes upside-down {
+    0% {top: 90%; left: 0%; transform: rotate(180deg);}
+    100% {top: 90%; left: 100%; transform: rotate(180deg);}
+}
+
+@keyframes jumping {
+    0% {top: 100%; left: 100%;}
+    25% {top: 90%; left: 75%;}
+    50% {top: 100%; left: 50%;}
+    75% {top: 90%; left: 25%;}
+    100% {top: 100%; left: -5%;}
+}
+
+@keyframes welcome {
+    0% {top: 15%; left: -5%;}
+    50% {top: 30%; left: 50%;}
+    100% {top: 15%; left: 100%;}
+}
+
+#mascot-container {
+    position: absolute;
+    display: inline-block;
+    top: -100%;
+    left: -100%;
+    animation: mascot-welcome 5s ease, 
+               rotating 5s ease 7s,
+               upside-down 5s ease 14s,
+               jumping 5s ease 21s,
+               welcome 10s ease 28s infinite alternate;
+}
+
+#mascot {
+    display: block;
+    z-index: 99;
+    width: 5vw;
+}
+
+#mascot-dialog {
+    position: absolute;
+    display: none;
+    width: 7vw;
+    left: 50%;
+    top: 0%;
+}
+
+#mascot-container:hover #mascot-dialog {
+    display: block;
+}
+
+
 /* Mobile styles */
 @media screen and (max-width: 500px) {    
     /* Home section adaptation */
@@ -268,7 +341,7 @@ html {
     }
 
     .download-label {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     /* Feedback section adaptation */        
@@ -301,4 +374,26 @@ html {
         width: 50%;
         
     }
+
+    #mobile {
+        display: flex;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    /* Mascot adaptation */
+    #mascot {
+        width: 15vw;
+    }
+    
+    #mascot-dialog {
+        position: absolute;
+        display: none;
+        width: 22vw;
+        left: 50%;
+        top: 0%;
+    }
+    
 }

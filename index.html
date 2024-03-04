@@ -14,119 +14,121 @@
   </head>
 
   <body>
-    <div id="navbar">
-      <a class="navbar-section" href="#home-section">Home</a>
-      <a class="navbar-section" href="#products-section">Products</a>
-      <a class="navbar-section" href="#feedback-section">Feedback</a>
-      <a class="navbar-section" href="#contacts-section">Contacts</a>
-    </div>
-
-    <!-- Home (first) section -->
-    <div id="home-section">
-      <div id="header-and-action">
-        <h1 id="main-header">Completed<br/>UTM FAF<br/>assignments!</h1>
-        <a href="#contacts-section">
-          <button id="buy-button">Buy</button>
-        </a>
+    <main>
+      <div id="navbar">
+        <a class="navbar-section" href="#home-section">Home</a>
+        <a class="navbar-section" href="#products-section">Products</a>
+        <a class="navbar-section" href="#feedback-section">Feedback</a>
+        <a class="navbar-section" href="#contacts-section">Contacts</a>
       </div>
-      <img id="section1-img" src="images/faf-docs.png"/>
-    </div>
 
-    <!-- Products (second) section -->
-    <div id="products-section">
-      <h2 class="section-header">Products</h2>
-
-      <!-- Tests product -->  
-      <div id="products-imgs-container">
-        <div class="img-label-container">
-          <a class="img-download-container" href="example_products/test-example.pdf">
-            <span class="download-label">Download example</span>
-            <img class="products-imgs" src="images/tests-vector.png">
+      <!-- Home (first) section -->
+      <div id="home-section">
+        <div id="header-and-action">
+          <h1 id="main-header">Completed<br/>UTM FAF<br/>assignments!</h1>
+          <a href="#contacts-section">
+            <button id="buy-button">Buy</button>
           </a>
-          <span class="img-label-prop">Tests</span>
-          <p>Marks: generally, 8+</p>
         </div>
+        <img id="section1-img" src="images/faf-docs.png"/>
+      </div>
 
-        <!-- Homeworks product -->
-        <div class="img-label-container">
-            <a class="img-download-container" href="example_products/homework-example.pdf">
+      <!-- Products (second) section -->
+      <div id="products-section">
+        <h2 class="section-header">Products</h2>
+
+        <!-- Tests product -->  
+        <div id="products-imgs-container">
+          <div class="img-label-container">
+            <a class="img-download-container" href="example_products/test-example.pdf">
               <span class="download-label">Download example</span>
-              <img class="products-imgs" src="images/homework-vector.png">
+              <img class="products-imgs" src="images/tests-vector.png">
             </a>
-          <span class="img-label-prop">Homeworks</span>
-          <p>Marks: generally, 9+</p>
+            <span class="img-label-prop">Tests</span>
+            <p>Marks: generally, 8+</p>
+          </div>
+
+          <!-- Homeworks product -->
+          <div class="img-label-container">
+              <a class="img-download-container" href="example_products/homework-example.pdf">
+                <span class="download-label">Download example</span>
+                <img class="products-imgs" src="images/homework-vector.png">
+              </a>
+            <span class="img-label-prop">Homeworks</span>
+            <p>Marks: generally, 9+</p>
+          </div>
+
+          <!-- Labs product -->
+          <div class="img-label-container">
+            <a class="img-download-container" href="example_products/lab-example.pdf">
+              <span class="download-label">Download example</span>
+              <img class="products-imgs" src="images/labs-vector.png">
+            </a>
+            <span class="img-label-prop">Laboratories + Reports </span>
+            <p>Marks: generally, 9+</p>
+          </div>
         </div>
+      </div>
 
-        <!-- Labs product -->
-        <div class="img-label-container">
-          <a class="img-download-container" href="example_products/lab-example.pdf">
-            <span class="download-label">Download example</span>
-            <img class="products-imgs" src="images/labs-vector.png">
-          </a>
-          <span class="img-label-prop">Laboratories + Reports </span>
-          <p>Marks: generally, 9+</p>
+      <!-- Feedback (third) section -->
+      <div id="feedback-section">
+        <h2 class="section-header">Feedback</h2>
+
+        <div id="feedbacks-container">
+          <div class="img-label-container">
+            <img class="author-feedback-img" src="images/feedback1-author.png" />
+            <span class="feedback-text">Alexander the Great</span>
+            <p class="feedback-text">Not even the Library of Alexandria contained
+              such valuable materials.</p>
+          </div>  
+          <div class="img-label-container">
+            <img class="author-feedback-img" src="images/feedback2-author.png" />
+            <span class="feedback-text">Salvador Dalí</span>
+            <p class="feedback-text">Your reports are as colorful as a Jackson Pollock 
+              painting.</p>
+          </div>  
+          <div class="img-label-container">
+            <img class="author-feedback-img" src="images/feedback3-author.png" />
+            <span class="feedback-text">Bilbo Baggins</span>
+            <p class="feedback-text">Your labs are as meticulously organized as a 
+              hobbit's pantry.</p>
+          </div>  
         </div>
       </div>
-    </div>
 
-    <!-- Feedback (third) section -->
-    <div id="feedback-section">
-      <h2 class="section-header">Feedback</h2>
+      <!-- Contacts (fourth) section -->
+      <div id="contacts-section">
+        <h2 class="section-header">Contacts</h2>
+        <div id="author-submit-form-container">
+          <div class="author-img-contacts-container">
+            <img class="author-feedback-img" src="images/author-img.png" />
+            <span>Frunze Vladislav</span>
+            <span id="contacts-text">vladislav.frunze@isa.utm.md<br/>078912345</span>
+          </div>
 
-      <div id="feedbacks-container">
-        <div class="img-label-container">
-          <img class="author-feedback-img" src="images/feedback1-author.png" />
-          <span class="feedback-text">Alexander the Great</span>
-          <p class="feedback-text">Not even the Library of Alexandria contained
-            such valuable materials.</p>
-        </div>  
-        <div class="img-label-container">
-          <img class="author-feedback-img" src="images/feedback2-author.png" />
-          <span class="feedback-text">Salvador Dalí</span>
-          <p class="feedback-text">Your reports are as colorful as a Jackson Pollock 
-            painting.</p>
-        </div>  
-        <div class="img-label-container">
-          <img class="author-feedback-img" src="images/feedback3-author.png" />
-          <span class="feedback-text">Bilbo Baggins</span>
-          <p class="feedback-text">Your labs are as meticulously organized as a 
-            hobbit's pantry.</p>
-        </div>  
-      </div>
-    </div>
-
-    <!-- Contacts (fourth) section -->
-    <div id="contacts-section">
-      <h2 class="section-header">Contacts</h2>
-      <div id="author-submit-form-container">
-        <div class="author-img-contacts-container">
-          <img class="author-feedback-img" src="images/author-img.png" />
-          <span>Frunze Vladislav</span>
-          <span id="contacts-text">vladislav.frunze@isa.utm.md<br/>078912345</span>
+          <form id="form" action="">
+            <label class="form-labels" for="email">Your email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label class="form-labels" for="message">Message:</label><br>
+            <textarea type="text" id="message" name="message"></textarea><br>
+            <input id="submit-button" type="submit" value="Submit">
+          </form>
         </div>
-
-        <form id="form" action="">
-          <label class="form-labels" for="email">Your email:</label><br>
-          <input type="text" id="email" name="email"><br>
-          <label class="form-labels" for="message">Message:</label><br>
-          <textarea type="text" id="message" name="message"></textarea><br>
-          <input id="submit-button" type="submit" value="Submit">
-        </form>
       </div>
-    </div>
 
-    <div id="last-section">
-      <p id="desktop">©2024 AFAF (Desktop version)</p>
-      <div id="mobile">
-        <p>©2024 AFAF (Mobile version)</p>
-        <img id="phone-img" src="images/phone.png" />
+      <div id="last-section">
+        <p id="desktop">©2024 AFAF (Desktop version)</p>
+        <div id="mobile">
+          <p>©2024 AFAF (Mobile version)</p>
+          <img id="phone-img" src="images/phone.png" />
+        </div>
       </div>
-    </div>
 
-    <!-- Mascot -->
-    <div id="mascot-container">
-      <img id="mascot" src="images/mascot.png" />
-      <img id="mascot-dialog" src="images/mascot-dialog.png" />
-    </div>
+      <!-- Mascot -->
+      <div id="mascot-container">
+        <img id="mascot" src="images/mascot.png" />
+        <img id="mascot-dialog" src="images/mascot-dialog.png" />
+      </div>
+    </main>
   </body>
 </html>

@@ -245,15 +245,15 @@ main {
 
 /* Mascot */
 @keyframes mascot-welcome {
-    0% {top: 10%; left: 2%;}
+    0% {top: 10%; left: -15vw;}
     50% {top: 15%; left: 50%;}
     100% {top: 10%; left: 100%;}
 }
 
 @keyframes rotating {
     0% {top: 30%; left: 100%;}
-    50% {top: 35%; left: 50%; transform: rotate(360deg);}
-    100% {top: 40%; left: -15vw; transform: rotate(0deg);}
+    50% {top: 30%; left: 50%; transform: rotate(360deg);}
+    100% {top: 30%; left: -15vw; transform: rotate(0deg);}
 }
 
 @keyframes upside-down {
@@ -280,11 +280,11 @@ main {
     display: inline-block;
     top: -100%;
     left: -100%;
-    animation: mascot-welcome 5s ease, 
-               rotating 5s ease 7s,
-               upside-down 5s ease 14s,
-               jumping 5s ease 21s,
-               welcome 10s ease 28s infinite alternate;
+    animation: mascot-welcome 5s ease 3s, 
+               rotating 5s ease 10s,
+               upside-down 5s ease 17s,
+               jumping 5s ease 24s,
+               welcome 10s ease 31s infinite alternate;
 }
 
 #mascot {

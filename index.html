@@ -26,14 +26,19 @@
       </div>
 
       <!-- Home (first) section -->
-      <div id="home-section">
-        <div id="header-and-action">
-          <h1 id="main-header">Completed<br/>UTM FAF<br/>assignments!</h1>
-          <a href="#contacts-section">
-            <button id="buy-button">Buy</button>
-          </a>
+      <div id="home-section" class="container-fluid" style="padding: 25px 15%;">
+        <div class="row justify-content-center gy-4">
+          <div class="col-md-7 col-sm-12">
+            <h1 class="mb-3 display-5">Completed<br/>UTM FAF<br/>assignments!</h1>
+            <a href="#contacts-section">
+              <button type="button" class="btn btn-dark fs-5 w-50">Buy</button>
+            </a>
+          </div>
+
+          <div class="col-5">
+            <img class="img-fluid" src="images/faf-docs.png"/>
+          </div>
         </div>
-        <img id="section1-img" src="images/faf-docs.png"/>
       </div>
 
       <!-- Products (second) section -->
@@ -74,28 +79,24 @@
       </div>
 
       <!-- Feedback (third) section -->
-      <div id="feedback-section" class="container bg-white">
-        <h2 class="section-header">Feedback</h2>
-
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <img class="" src="images/feedback1-author.png" />
-            <span class="">Alexander the Great</span>
-            <p class="">Not even the Library of Alexandria contained
-              such valuable materials.</p>
+      <div id="feedback-section" class="container-fluid" style="padding: 25px 15%;">
+        <div class="row justify-content-evenly gy-4">
+          <h2 class="col-12 section-header">Feedback</h2>
+          <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/feedback1-author.png" />
+            <span class="mt-1 mb-2 text-center text-muted">Alexander the Great</span>
+            <p class="text-center">Not even the Library of Alexandria contained such valuable materials.</p>
+          </div>
+          <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/feedback2-author.png" />
+            <span class="mt-1 mb-2 text-center text-muted">Salvador Dalí</span>
+            <p class="text-center">Your reports are as colorful as a Jackson Pollock painting.</p>
           </div>  
-          <div class="col-md-4">
-            <img class="" src="images/feedback2-author.png" />
-            <span class="">Salvador Dalí</span>
-            <p class="">Your reports are as colorful as a Jackson Pollock 
-              painting.</p>
-          </div>  
-          <div class="col-md-4">
-            <img class="" src="images/feedback3-author.png" />
-            <span class="">Bilbo Baggins</span>
-            <p class="">Your labs are as meticulously organized as a 
-              hobbit's pantry.</p>
-          </div>  
+          <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/feedback3-author.png" />
+            <span class="mt-1 mb-2 text-center text-muted">Bilbo Baggins</span>
+            <p class="text-center">Your labs are as meticulously organized as a hobbit's pantry.</p>
+          </div>
         </div>
       </div>
 

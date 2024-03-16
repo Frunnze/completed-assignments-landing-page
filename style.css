@@ -6,6 +6,7 @@ html {
 main {
     position: relative;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 #navbar {
@@ -32,21 +33,21 @@ main {
     border-bottom: 1px solid black;
 }
 
-#home-section {
+/* #home-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 15%;
     border-bottom: 1px solid #DDDDDD;
     background-color: rgb(255, 255, 255);
-}
+} */
 
-#main-header {
+/* #main-header {
     font-weight: bold;
     font-size: 4vw;
-}
+} */
 
-#buy-button {
+/* #buy-button {
     margin-top: 20px;
     width: 150px;
     height: 40px;
@@ -61,12 +62,12 @@ main {
 
 #buy-button:hover {
     background-color: rgb(61, 61, 61);
-}
+} */
 
-#section1-img {
+/* #section1-img {
     display: block;
     width: 30vw;
-}
+} */
 
 
 /* Products section */
@@ -319,13 +320,13 @@ main {
         justify-content: center;
     }
 
-    #section1-img {
+    /* #section1-img {
         width: 70%;
-    }
+    } */
 
-    #main-header {
+    /* #main-header {
         font-size: 9vw;
-    }
+    } */
 
     /* Products section adaptation */
     .section-header {
@@ -350,13 +351,13 @@ main {
     }
 
     /* Feedback section adaptation */        
-    .author-feedback-img {
+    /* .author-feedback-img {
         width: 10vw;
     }
 
     .feedback-text {
         font-size: 3.5vw;
-    }
+    } */
 
     /* Contacts section adaptation */    
     #contacts-text {

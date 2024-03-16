@@ -33,43 +33,6 @@ main {
     border-bottom: 1px solid black;
 }
 
-/* #home-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 15%;
-    border-bottom: 1px solid #DDDDDD;
-    background-color: rgb(255, 255, 255);
-} */
-
-/* #main-header {
-    font-weight: bold;
-    font-size: 4vw;
-} */
-
-/* #buy-button {
-    margin-top: 20px;
-    width: 150px;
-    height: 40px;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-}
-
-#buy-button:hover {
-    background-color: rgb(61, 61, 61);
-} */
-
-/* #section1-img {
-    display: block;
-    width: 30vw;
-} */
-
-
 /* Products section */
 #products-section {
     padding: 25px 15%;
@@ -134,29 +97,6 @@ main {
     flex-wrap: wrap;
     gap: 60px;
 }
-
-
-/* Feedback (third) section */
-/* #feedback-section {
-    padding: 25px 15%;
-    border-bottom: 1px solid #DDDDDD;
-    background-color: white;
-}
-
-#feedbacks-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.author-feedback-img {
-    width: 60px;
-}
-
-.feedback-text {
-    text-align: center;
-} */
 
 
 /* Contacts (fourth) section */
@@ -320,14 +260,6 @@ main {
         justify-content: center;
     }
 
-    /* #section1-img {
-        width: 70%;
-    } */
-
-    /* #main-header {
-        font-size: 9vw;
-    } */
-
     /* Products section adaptation */
     .section-header {
         font-size: 6vw;
@@ -349,15 +281,6 @@ main {
     .download-label {
         font-size: 3vw;
     }
-
-    /* Feedback section adaptation */        
-    /* .author-feedback-img {
-        width: 10vw;
-    }
-
-    .feedback-text {
-        font-size: 3.5vw;
-    } */
 
     /* Contacts section adaptation */    
     #contacts-text {

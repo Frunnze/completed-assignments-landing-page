@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Completed UTM FAF assignments</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
 
@@ -14,6 +16,7 @@
   </head>
 
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <main>
       <div id="navbar">
         <a class="navbar-section" href="#home-section">Home</a>
@@ -23,14 +26,19 @@
       </div>
 
       <!-- Home (first) section -->
-      <div id="home-section">
-        <div id="header-and-action">
-          <h1 id="main-header">Completed<br/>UTM FAF<br/>assignments!</h1>
-          <a href="#contacts-section">
-            <button id="buy-button">Buy</button>
-          </a>
+      <div id="home-section" class="container-fluid" style="padding: 25px 15%;">
+        <div class="row justify-content-center gy-4">
+          <div class="col-md-7 col-sm-12">
+            <h1 class="mb-3 display-5">Completed<br/>UTM FAF<br/>assignments!</h1>
+            <a href="#contacts-section">
+              <button type="button" class="btn btn-dark fs-5 w-50">Buy</button>
+            </a>
+          </div>
+
+          <div class="col-5">
+            <img class="img-fluid" src="images/faf-docs.png"/>
+          </div>
         </div>
-        <img id="section1-img" src="images/faf-docs.png"/>
       </div>
 
       <!-- Products (second) section -->
@@ -71,28 +79,24 @@
       </div>
 
       <!-- Feedback (third) section -->
-      <div id="feedback-section">
-        <h2 class="section-header">Feedback</h2>
-
-        <div id="feedbacks-container">
-          <div class="img-label-container">
-            <img class="author-feedback-img" src="images/feedback1-author.png" />
-            <span class="feedback-text">Alexander the Great</span>
-            <p class="feedback-text">Not even the Library of Alexandria contained
-              such valuable materials.</p>
+      <div id="feedback-section" class="container-fluid" style="padding: 25px 15%;">
+        <div class="row justify-content-evenly gy-4">
+          <h2 class="col-12 section-header">Feedback</h2>
+          <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/feedback1-author.png" />
+            <span class="mt-1 mb-2 text-center text-muted">Alexander the Great</span>
+            <p class="text-center">Not even the Library of Alexandria contained such valuable materials.</p>
+          </div>
+          <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/feedback2-author.png" />
+            <span class="mt-1 mb-2 text-center text-muted">Salvador Dalí</span>
+            <p class="text-center">Your reports are as colorful as a Jackson Pollock painting.</p>
           </div>  
-          <div class="img-label-container">
-            <img class="author-feedback-img" src="images/feedback2-author.png" />
-            <span class="feedback-text">Salvador Dalí</span>
-            <p class="feedback-text">Your reports are as colorful as a Jackson Pollock 
-              painting.</p>
-          </div>  
-          <div class="img-label-container">
-            <img class="author-feedback-img" src="images/feedback3-author.png" />
-            <span class="feedback-text">Bilbo Baggins</span>
-            <p class="feedback-text">Your labs are as meticulously organized as a 
-              hobbit's pantry.</p>
-          </div>  
+          <div class="col-12 col-sm-4 d-flex flex-column align-items-center">
+            <img class="img-fluid" src="images/feedback3-author.png" />
+            <span class="mt-1 mb-2 text-center text-muted">Bilbo Baggins</span>
+            <p class="text-center">Your labs are as meticulously organized as a hobbit's pantry.</p>
+          </div>
         </div>
       </div>
 
